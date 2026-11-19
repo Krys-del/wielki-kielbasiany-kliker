@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Wielki Kiełbasiany Clicker</title>
 <style>
 :root{
@@ -268,6 +268,91 @@ footer{text-align:center;color:#89776e;padding:10px 15px 30px;font-size:12px}
 .reset-button:hover {
     transform: scale(1.06);
     box-shadow: 0 0 15px #ff3333;
+}
+  /* Wygodna obsługa dotykowa */
+button {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Wersja na iPhone */
+@media (max-width: 600px) {
+  header {
+    padding: 18px 10px;
+  }
+
+  .logo {
+    font-size: 23px;
+    letter-spacing: 0;
+  }
+
+  header p {
+    font-size: 12px;
+  }
+
+  main {
+    margin: 12px auto;
+    padding: 0 9px 20px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+
+  .stat {
+    padding: 9px 3px;
+    font-size: 10px;
+    border-radius: 10px;
+  }
+
+  .stat .number {
+    font-size: 17px;
+    margin-top: 5px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .card {
+    padding: 12px;
+    border-radius: 13px;
+  }
+
+  .clicker {
+    min-height: auto;
+    padding: 15px 10px;
+  }
+
+  .big-button {
+    width: 155px;
+    height: 155px;
+    margin: 12px auto;
+  }
+
+  .big-button span {
+    font-size: 82px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+
+  .grill-scene {
+    height: 175px;
+  }
+
+  .shop-item {
+    padding: 8px;
+  }
+
+  .reset-button {
+    padding: 9px 12px;
+    font-size: 13px;
+  }
 }
 </style>
 </head>
